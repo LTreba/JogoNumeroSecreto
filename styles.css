@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Oswald:wght@500&display=swap');
+
+:root{
+    --font-family: 'Oswald', sans-serif;
+    --first-color: #F1C376;
+    --second-color: #3F2305;
+    --third-color: #E9B384;
+    --fourth-color: #C8AE7D;
+    --background-color: #8C3333;
+    --guess-text: #7A9D54;
+}
+
+body{
+    background: linear-gradient(var(--first-color), var(--third-color));
+    color: var(--second-color);
+    font-family: var(--font-family);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    gap: 2em;
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+h3{
+    font-size: 1.75em;
+}
+
+.mensagem{
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.box{
+    font-size: 3em;
+    color: var(--guess-text);
+    border: 0.1em dashed var(--fourth-color);
+    border-radius: 5px;
+    background-color: var(--background-color);
+}
+
+.errorMessage{
+    font-size: 2em;
+    color: var(--background-color);
+}
+
+.info-msg{
+    color: var(--guess-text);
+    font-size: 1.5em;
+}
+
+.playAgain{
+    font-family: var(--font-family);
+    background-color: var(--guess-text);
+    border: 3px solid var(--fourth-color);
+    border-radius: 15px;
+    font-size: 1em;
+}
